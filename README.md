@@ -1,6 +1,6 @@
 ### Hi there! I'm Jay Kumar 👋
 
-<a href="google.com">
+<a href="https://www.google.com/">
 <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <!--

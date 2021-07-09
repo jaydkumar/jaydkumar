@@ -1,8 +1,4 @@
-/**
- * @param {number} num
- * @return {string}
- */
- var intToRoman = function(num) {
+var intToRoman = function(num) {
     const map = {
         M: 1000,
         CM: 900,
@@ -33,6 +29,3 @@
 
     return result;
 };
-
-// TESTING
-console.log(intToRoman(68));

@@ -36,23 +36,23 @@ const stretch = function(root, k) {
     let tempRight = node.right;
     node.val = Math.floor(node.val / k);
     for (let i = 1; i < k; i++) {
-	if (dir === 0) {
-	    node.left = new Node(node.val);
-            node = node.left;
-	} else {
-	    node.right = new Node(node.val);
-	    node = node.right;
-	}
+      if (dir === 'left') {
+          node.left = new Node(node.val);
+          node = node.left;
+      } else {
+          node.right = new Node(node.val);
+          node = node.right;
+      }
     }
     node.left = tempLeft;
     node.right = tempRight;
     
-    iter(node.left, 0);
-    iter(node.right, 1);
+    iter(node.left, 'left');
+    iter(node.right, 'right');
   }
   
-  iter(root.left.left, 0);
-  iter(root.right, 1);
+  iter(root.left.left, 'left');
+  iter(root.right, 'right');
 }
 
 
